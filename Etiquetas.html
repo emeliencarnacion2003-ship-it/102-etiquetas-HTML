@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- Le dice al navegador que este documento es HTML5 -->
+<html lang="es">
+<!-- lang="es" indica que la página está en español -->
+
+<head>
+  <!-- HEAD: información que NO se ve en la página -->
+  <meta charset="UTF-8">
+  <!-- charset="UTF-8" permite mostrar tildes y la ñ correctamente -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- viewport: hace que la página se adapte al celular -->
+  <title>102 Etiquetas HTML</title>
+  <!-- title: texto que aparece en la pestaña del navegador -->
+
+  
+</head>
+
+<body>
+  <!-- BODY: todo lo que se ve en la pagina -->
+
+  <h1>102 Etiquetas HTML</h1>
+  <!-- h1: titulo principal de la pagina -->
+
+  <p>Tabla con el número, nombre, descripción, ejemplo de uso y un dato adicional de cada etiqueta.</p>
+  <!-- p: párrafo de introducción -->
+
+  <!--
+    TABLA:
+    table = la tabla completa
+    thead = grupo del encabezado
+    tbody = grupo de las filas de datos
+    tr    = una fila
+    th    = celda de título (encabezado)
+    td    = celda de datos
+    IMPORTANTE: para mostrar una etiqueta como texto se escribe &lt; en lugar de < y &gt; en lugar de >
+    <code> hace que el texto se vea como código.
+  -->
+  <table>
+    <thead>
+      <tr>
+        <th>Número</th>
+        <th>Nombre de la Etiqueta</th>
+        <th>Descripción</th>
+        <th>Ejemplo de Uso</th>
+        <th>Elemento Adicional</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- Cada fila tiene 5 celdas: número, etiqueta, descripción, ejemplo y adicional -->
+      <!-- 1 a --><tr><td>1</td><td><code>&lt;a&gt;</code></td><td>Define un hipervínculo. Enlaza una página con otra o con un recurso.</td><td><code>&lt;a href="https://www.example.com"&gt;Visita Ejemplo&lt;/a&gt;</code></td><td>Atributo target="_blank" para abrir en una pestaña nueva.</td></tr>
+      <!-- 2 abbr --><tr><td>2</td><td><code>&lt;abbr&gt;</code></td><td>Define una abreviatura y muestra su significado al pasar el mouse.</td><td><code>&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;</code></td><td>El texto del atributo title sale como ayuda.</td></tr>
+      <!-- 3 address --><tr><td>3</td><td><code>&lt;address&gt;</code></td><td>Define la información de contacto del autor o del sitio.</td><td><code>&lt;address&gt;Calle 1, Santo Domingo&lt;/address&gt;</code></td><td>El navegador suele mostrarlo en cursiva.</td></tr>
+      <!-- 4 area --><tr><td>4</td><td><code>&lt;area&gt;</code></td><td>Define una zona clicable dentro de un mapa de imagen.</td><td><code>&lt;area shape="rect" coords="0,0,50,50" href="a.html" alt="Zona"&gt;</code></td><td>Se usa dentro de la etiqueta map.</td></tr>
+      <!-- 5 article --><tr><td>5</td><td><code>&lt;article&gt;</code></td><td>Define un contenido independiente, como una noticia o un post.</td><td><code>&lt;article&gt;Contenido del artículo&lt;/article&gt;</code></td><td>Suele llevar su propio encabezado h2.</td></tr>
+      <!-- 6 aside --><tr><td>6</td><td><code>&lt;aside&gt;</code></td><td>Define contenido relacionado pero aparte, como una barra lateral.</td><td><code>&lt;aside&gt;Datos curiosos&lt;/aside&gt;</code></td><td>Muy usado para barras laterales.</td></tr>
+      <!-- 7 audio --><tr><td>7</td><td><code>&lt;audio&gt;</code></td><td>Inserta un reproductor de audio.</td><td><code>&lt;audio src="sonido.mp3" controls&gt;&lt;/audio&gt;</code></td><td>El atributo controls muestra los botones de play y pausa.</td></tr>
+      <!-- 8 b --><tr><td>8</td><td><code>&lt;b&gt;</code></td><td>Pone el texto en negrita sin darle importancia especial.</td><td><code>&lt;b&gt;Texto en negrita&lt;/b&gt;</code></td><td>Para dar importancia real es mejor usar strong.</td></tr>
+      <!-- 9 base --><tr><td>9</td><td><code>&lt;base&gt;</code></td><td>Define la URL base para todos los enlaces relativos de la página.</td><td><code>&lt;base href="https://www.example.com/"&gt;</code></td><td>Va dentro de head y solo se usa una vez.</td></tr>
+      <!-- 10 bdi --><tr><td>10</td><td><code>&lt;bdi&gt;</code></td><td>Aísla un texto que puede tener otra dirección de escritura.</td><td><code>&lt;bdi&gt;مرحبا&lt;/bdi&gt;</code></td><td>Útil con nombres de usuario en distintos idiomas.</td></tr>
+      <!-- 11 bdo --><tr><td>11</td><td><code>&lt;bdo&gt;</code></td><td>Cambia la dirección del texto (izquierda a derecha o al revés).</td><td><code>&lt;bdo dir="rtl"&gt;Texto al revés&lt;/bdo&gt;</code></td><td>El atributo dir acepta ltr y rtl.</td></tr>
+      <!-- 12 blockquote --><tr><td>12</td><td><code>&lt;blockquote&gt;</code></td><td>Define una cita larga tomada de otra fuente.</td><td><code>&lt;blockquote cite="https://example.com"&gt;Una cita larga.&lt;/blockquote&gt;</code></td><td>El atributo cite guarda la fuente.</td></tr>
+      <!-- 13 body --><tr><td>13</td><td><code>&lt;body&gt;</code></td><td>Contiene todo el contenido visible de la página.</td><td><code>&lt;body&gt;Contenido visible&lt;/body&gt;</code></td><td>Solo puede haber una por documento.</td></tr>
+      <!-- 14 br --><tr><td>14</td><td><code>&lt;br&gt;</code></td><td>Inserta un salto de línea.</td><td><code>Línea 1&lt;br&gt;Línea 2</code></td><td>Es una etiqueta vacía: no tiene cierre.</td></tr>
+      <!-- 15 button --><tr><td>15</td><td><code>&lt;button&gt;</code></td><td>Crea un botón en el que se puede hacer clic.</td><td><code>&lt;button type="button"&gt;Enviar&lt;/button&gt;</code></td><td>El atributo type puede ser button, submit o reset.</td></tr>
+      <!-- 16 canvas --><tr><td>16</td><td><code>&lt;canvas&gt;</code></td><td>Crea un área para dibujar gráficos con JavaScript.</td><td><code>&lt;canvas id="lienzo" width="200" height="100"&gt;&lt;/canvas&gt;</code></td><td>Sin JavaScript no muestra nada.</td></tr>
+      <!-- 17 caption --><tr><td>17</td><td><code>&lt;caption&gt;</code></td><td>Define el título de una tabla.</td><td><code>&lt;caption&gt;Lista de etiquetas&lt;/caption&gt;</code></td><td>Va justo después de abrir table.</td></tr>
+      <!-- 18 cite --><tr><td>18</td><td><code>&lt;cite&gt;</code></td><td>Indica el título de una obra (libro, película, canción).</td><td><code>&lt;cite&gt;Don Quijote&lt;/cite&gt;</code></td><td>Normalmente se muestra en cursiva.</td></tr>
+      <!-- 19 code --><tr><td>19</td><td><code>&lt;code&gt;</code></td><td>Muestra un fragmento de código de computadora.</td><td><code>&lt;code&gt;console.log("Hola")&lt;/code&gt;</code></td><td>Usa fuente monoespaciada.</td></tr>
+      <!-- 20 col --><tr><td>20</td><td><code>&lt;col&gt;</code></td><td>Define propiedades para una columna de una tabla.</td><td><code>&lt;col style="background-color: yellow"&gt;</code></td><td>Va dentro de colgroup y no tiene cierre.</td></tr>
+      <!-- 21 colgroup --><tr><td>21</td><td><code>&lt;colgroup&gt;</code></td><td>Agrupa columnas de una tabla para darles estilo.</td><td><code>&lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;/colgroup&gt;</code></td><td>Va antes de las filas de la tabla.</td></tr>
+      <!-- 22 data --><tr><td>22</td><td><code>&lt;data&gt;</code></td><td>Asocia un valor legible por máquinas al contenido.</td><td><code>&lt;data value="25"&gt;Veinticinco&lt;/data&gt;</code></td><td>El atributo value guarda el dato real.</td></tr>
+      <!-- 23 datalist --><tr><td>23</td><td><code>&lt;datalist&gt;</code></td><td>Ofrece una lista de opciones sugeridas para un input.</td><td><code>&lt;datalist id="frutas"&gt;&lt;option value="Mango"&gt;&lt;/datalist&gt;</code></td><td>Se conecta al input con el atributo list.</td></tr>
+      <!-- 24 dd --><tr><td>24</td><td><code>&lt;dd&gt;</code></td><td>Define la descripción de un término en una lista de definiciones.</td><td><code>&lt;dd&gt;Lenguaje de marcado&lt;/dd&gt;</code></td><td>Va dentro de dl, después de dt.</td></tr>
+      <!-- 25 del --><tr><td>25</td><td><code>&lt;del&gt;</code></td><td>Marca texto eliminado (se ve tachado).</td><td><code>&lt;del&gt;Texto viejo&lt;/del&gt;</code></td><td>Se combina con ins para mostrar cambios.</td></tr>
+      <!-- 26 details --><tr><td>26</td><td><code>&lt;details&gt;</code></td><td>Crea un bloque que se puede abrir y cerrar.</td><td><code>&lt;details&gt;&lt;summary&gt;Ver más&lt;/summary&gt;Texto oculto&lt;/details&gt;</code></td><td>El atributo open lo deja abierto al inicio.</td></tr>
+      <!-- 27 dfn --><tr><td>27</td><td><code>&lt;dfn&gt;</code></td><td>Marca el término que se está definiendo.</td><td><code>&lt;dfn&gt;HTML&lt;/dfn&gt; es un lenguaje</code></td><td>Normalmente se muestra en cursiva.</td></tr>
+      <!-- 28 dialog --><tr><td>28</td><td><code>&lt;dialog&gt;</code></td><td>Define una ventana de diálogo o cuadro emergente.</td><td><code>&lt;dialog open&gt;Hola&lt;/dialog&gt;</code></td><td>Se abre y cierra con JavaScript (show y close).</td></tr>
+      <!-- 29 div --><tr><td>29</td><td><code>&lt;div&gt;</code></td><td>Define una sección o contenedor genérico del documento.</td><td><code>&lt;div&gt;Contenido del div&lt;/div&gt;</code></td><td>Se usa mucho para aplicar estilos CSS y organizar el diseño.</td></tr>
+      <!-- 30 dl --><tr><td>30</td><td><code>&lt;dl&gt;</code></td><td>Crea una lista de definiciones.</td><td><code>&lt;dl&gt;&lt;dt&gt;HTML&lt;/dt&gt;&lt;dd&gt;Lenguaje web&lt;/dd&gt;&lt;/dl&gt;</code></td><td>Combina dt y dd.</td></tr>
+      <!-- 31 dt --><tr><td>31</td><td><code>&lt;dt&gt;</code></td><td>Define el término en una lista de definiciones.</td><td><code>&lt;dt&gt;CSS&lt;/dt&gt;</code></td><td>Va dentro de dl.</td></tr>
+      <!-- 32 em --><tr><td>32</td><td><code>&lt;em&gt;</code></td><td>Da énfasis al texto (se muestra en cursiva).</td><td><code>Es &lt;em&gt;muy&lt;/em&gt; importante</code></td><td>Cambia el sentido de la frase al leerla.</td></tr>
+      <!-- 33 embed --><tr><td>33</td><td><code>&lt;embed&gt;</code></td><td>Incrusta contenido externo, como un PDF o un plugin.</td><td><code>&lt;embed src="documento.pdf" width="300" height="200"&gt;</code></td><td>No tiene etiqueta de cierre.</td></tr>
+      <!-- 34 fieldset --><tr><td>34</td><td><code>&lt;fieldset&gt;</code></td><td>Agrupa varios campos de un formulario.</td><td><code>&lt;fieldset&gt;&lt;legend&gt;Datos&lt;/legend&gt;&lt;/fieldset&gt;</code></td><td>Dibuja un borde alrededor del grupo.</td></tr>
+      <!-- 35 figcaption --><tr><td>35</td><td><code>&lt;figcaption&gt;</code></td><td>Define el pie o descripción de una figura.</td><td><code>&lt;figcaption&gt;Foto de la playa&lt;/figcaption&gt;</code></td><td>Va dentro de figure.</td></tr>
+      <!-- 36 figure --><tr><td>36</td><td><code>&lt;figure&gt;</code></td><td>Agrupa una imagen, gráfico o código con su descripción.</td><td><code>&lt;figure&gt;&lt;img src="a.jpg" alt="Playa"&gt;&lt;/figure&gt;</code></td><td>Se acompaña de figcaption.</td></tr>
+      <!-- 37 footer --><tr><td>37</td><td><code>&lt;footer&gt;</code></td><td>Define el pie de página de la página o de una sección.</td><td><code>&lt;footer&gt;© 2026 Mi sitio&lt;/footer&gt;</code></td><td>Suele llevar derechos de autor y contacto.</td></tr>
+      <!-- 38 form --><tr><td>38</td><td><code>&lt;form&gt;</code></td><td>Crea un formulario para recoger datos del usuario.</td><td><code>&lt;form action="/enviar" method="post"&gt;&lt;/form&gt;</code></td><td>method puede ser get o post.</td></tr>
+      <!-- 39 h1 --><tr><td>39</td><td><code>&lt;h1&gt;</code></td><td>Define el encabezado más importante de la página.</td><td><code>&lt;h1&gt;Este es un Encabezado&lt;/h1&gt;</code></td><td>Los encabezados van de h1 (más importante) a h6 (menos importante).</td></tr>
+      <!-- 40 h2 --><tr><td>40</td><td><code>&lt;h2&gt;</code></td><td>Define un encabezado de segundo nivel.</td><td><code>&lt;h2&gt;Subtítulo&lt;/h2&gt;</code></td><td>Se usa para dividir las secciones principales.</td></tr>
+      <!-- 41 h3 --><tr><td>41</td><td><code>&lt;h3&gt;</code></td><td>Define un encabezado de tercer nivel.</td><td><code>&lt;h3&gt;Sub-subtítulo&lt;/h3&gt;</code></td><td>Va dentro de una sección con h2.</td></tr>
+      <!-- 42 h4 --><tr><td>42</td><td><code>&lt;h4&gt;</code></td><td>Define un encabezado de cuarto nivel.</td><td><code>&lt;h4&gt;Título menor&lt;/h4&gt;</code></td><td>No te saltes niveles al usarlos.</td></tr>
+      <!-- 43 h5 --><tr><td>43</td><td><code>&lt;h5&gt;</code></td><td>Define un encabezado de quinto nivel.</td><td><code>&lt;h5&gt;Título pequeño&lt;/h5&gt;</code></td><td>Se usa poco.</td></tr>
+      <!-- 44 h6 --><tr><td>44</td><td><code>&lt;h6&gt;</code></td><td>Define el encabezado de menor importancia.</td><td><code>&lt;h6&gt;Título mínimo&lt;/h6&gt;</code></td><td>Es el último nivel de encabezado.</td></tr>
+      <!-- 45 head --><tr><td>45</td><td><code>&lt;head&gt;</code></td><td>Contiene la información invisible de la página (título, metadatos, estilos).</td><td><code>&lt;head&gt;&lt;title&gt;Mi página&lt;/title&gt;&lt;/head&gt;</code></td><td>Va antes del body.</td></tr>
+      <!-- 46 header --><tr><td>46</td><td><code>&lt;header&gt;</code></td><td>Define la cabecera de la página o de una sección.</td><td><code>&lt;header&gt;&lt;h1&gt;Mi sitio&lt;/h1&gt;&lt;/header&gt;</code></td><td>Suele contener logo, título y menú.</td></tr>
+      <!-- 47 hgroup --><tr><td>47</td><td><code>&lt;hgroup&gt;</code></td><td>Agrupa un título con su subtítulo.</td><td><code>&lt;hgroup&gt;&lt;h1&gt;Título&lt;/h1&gt;&lt;p&gt;Subtítulo&lt;/p&gt;&lt;/hgroup&gt;</code></td><td>Sirve para que el subtítulo no cuente como un nuevo encabezado.</td></tr>
+      <!-- 48 hr --><tr><td>48</td><td><code>&lt;hr&gt;</code></td><td>Dibuja una línea horizontal que separa contenido.</td><td><code>&lt;hr&gt;</code></td><td>Es una etiqueta vacía: no tiene cierre.</td></tr>
+      <!-- 49 html --><tr><td>49</td><td><code>&lt;html&gt;</code></td><td>Es la raíz que envuelve todo el documento HTML.</td><td><code>&lt;html lang="es"&gt;...&lt;/html&gt;</code></td><td>El atributo lang indica el idioma de la página.</td></tr>
+      <!-- 50 i --><tr><td>50</td><td><code>&lt;i&gt;</code></td><td>Muestra el texto en cursiva (voz distinta, términos técnicos).</td><td><code>&lt;i&gt;Texto en cursiva&lt;/i&gt;</code></td><td>Para énfasis real es mejor usar em.</td></tr>
+      <!-- 51 iframe --><tr><td>51</td><td><code>&lt;iframe&gt;</code></td><td>Incrusta otra página web dentro de la tuya.</td><td><code>&lt;iframe src="https://example.com" width="300" height="200"&gt;&lt;/iframe&gt;</code></td><td>Algunos sitios no permiten ser incrustados.</td></tr>
+      <!-- 52 img --><tr><td>52</td><td><code>&lt;img&gt;</code></td><td>Incrusta una imagen en la página.</td><td><code>&lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;</code></td><td>Importante incluir el atributo alt para accesibilidad.</td></tr>
+      <!-- 53 input --><tr><td>53</td><td><code>&lt;input&gt;</code></td><td>Crea un campo donde el usuario escribe o elige datos.</td><td><code>&lt;input type="text" name="nombre"&gt;</code></td><td>El atributo type cambia el tipo: text, email, password, checkbox, etc.</td></tr>
+      <!-- 54 ins --><tr><td>54</td><td><code>&lt;ins&gt;</code></td><td>Marca texto insertado o añadido (se ve subrayado).</td><td><code>&lt;ins&gt;Texto nuevo&lt;/ins&gt;</code></td><td>Es el contrario de del.</td></tr>
+      <!-- 55 kbd --><tr><td>55</td><td><code>&lt;kbd&gt;</code></td><td>Indica una tecla o entrada de teclado.</td><td><code>Presiona &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt;</code></td><td>Usa fuente monoespaciada.</td></tr>
+      <!-- 56 label --><tr><td>56</td><td><code>&lt;label&gt;</code></td><td>Define la etiqueta (texto) de un campo de formulario.</td><td><code>&lt;label for="correo"&gt;Correo:&lt;/label&gt;</code></td><td>El atributo for debe coincidir con el id del input.</td></tr>
+      <!-- 57 legend --><tr><td>57</td><td><code>&lt;legend&gt;</code></td><td>Define el título de un fieldset.</td><td><code>&lt;legend&gt;Datos personales&lt;/legend&gt;</code></td><td>Va dentro de fieldset.</td></tr>
+      <!-- 58 li --><tr><td>58</td><td><code>&lt;li&gt;</code></td><td>Define un elemento de una lista.</td><td><code>&lt;li&gt;Primer elemento&lt;/li&gt;</code></td><td>Va dentro de ul u ol.</td></tr>
+      <!-- 59 link --><tr><td>59</td><td><code>&lt;link&gt;</code></td><td>Conecta el documento con un recurso externo, como un CSS.</td><td><code>&lt;link rel="stylesheet" href="estilos.css"&gt;</code></td><td>Va en head y no tiene cierre.</td></tr>
+      <!-- 60 main --><tr><td>60</td><td><code>&lt;main&gt;</code></td><td>Define el contenido principal de la página.</td><td><code>&lt;main&gt;Contenido principal&lt;/main&gt;</code></td><td>Solo debe haber uno por página.</td></tr>
+      <!-- 61 map --><tr><td>61</td><td><code>&lt;map&gt;</code></td><td>Define un mapa de imagen con zonas clicables.</td><td><code>&lt;map name="mapa"&gt;&lt;area ...&gt;&lt;/map&gt;</code></td><td>Se conecta a la imagen con usemap.</td></tr>
+      <!-- 62 mark --><tr><td>62</td><td><code>&lt;mark&gt;</code></td><td>Resalta texto, como con un marcador amarillo.</td><td><code>&lt;mark&gt;Texto resaltado&lt;/mark&gt;</code></td><td>Muy usado para resultados de búsqueda.</td></tr>
+      <!-- 63 menu --><tr><td>63</td><td><code>&lt;menu&gt;</code></td><td>Define una lista de comandos o menú de opciones.</td><td><code>&lt;menu&gt;&lt;li&gt;Abrir&lt;/li&gt;&lt;li&gt;Guardar&lt;/li&gt;&lt;/menu&gt;</code></td><td>Es parecido a ul.</td></tr>
+      <!-- 64 meta --><tr><td>64</td><td><code>&lt;meta&gt;</code></td><td>Define metadatos de la página (codificación, descripción, viewport).</td><td><code>&lt;meta charset="UTF-8"&gt;</code></td><td>Va en head y no tiene cierre.</td></tr>
+      <!-- 65 meter --><tr><td>65</td><td><code>&lt;meter&gt;</code></td><td>Muestra un valor dentro de un rango conocido.</td><td><code>&lt;meter value="6" min="0" max="10"&gt;6 de 10&lt;/meter&gt;</code></td><td>Se usa para medidas, no para progreso.</td></tr>
+      <!-- 66 nav --><tr><td>66</td><td><code>&lt;nav&gt;</code></td><td>Define un bloque de enlaces de navegación.</td><td><code>&lt;nav&gt;&lt;a href="/"&gt;Inicio&lt;/a&gt;&lt;/nav&gt;</code></td><td>Úsalo para menús principales.</td></tr>
+      <!-- 67 noscript --><tr><td>67</td><td><code>&lt;noscript&gt;</code></td><td>Muestra contenido alternativo si JavaScript está desactivado.</td><td><code>&lt;noscript&gt;Activa JavaScript&lt;/noscript&gt;</code></td><td>Solo se ve cuando no hay JavaScript.</td></tr>
+      <!-- 68 object --><tr><td>68</td><td><code>&lt;object&gt;</code></td><td>Incrusta un objeto externo, como un PDF, imagen o video.</td><td><code>&lt;object data="archivo.pdf" type="application/pdf"&gt;&lt;/object&gt;</code></td><td>Es más antigua que embed e iframe.</td></tr>
+      <!-- 69 ol --><tr><td>69</td><td><code>&lt;ol&gt;</code></td><td>Crea una lista ordenada (con números).</td><td><code>&lt;ol&gt;&lt;li&gt;Uno&lt;/li&gt;&lt;li&gt;Dos&lt;/li&gt;&lt;/ol&gt;</code></td><td>El atributo type cambia la numeración (1, A, a, I, i).</td></tr>
+      <!-- 70 optgroup --><tr><td>70</td><td><code>&lt;optgroup&gt;</code></td><td>Agrupa opciones dentro de una lista desplegable.</td><td><code>&lt;optgroup label="Frutas"&gt;&lt;option&gt;Mango&lt;/option&gt;&lt;/optgroup&gt;</code></td><td>Va dentro de select.</td></tr>
+      <!-- 71 option --><tr><td>71</td><td><code>&lt;option&gt;</code></td><td>Define una opción de una lista desplegable.</td><td><code>&lt;option value="1"&gt;Opción 1&lt;/option&gt;</code></td><td>Va dentro de select, optgroup o datalist.</td></tr>
+      <!-- 72 output --><tr><td>72</td><td><code>&lt;output&gt;</code></td><td>Muestra el resultado de un cálculo o acción del usuario.</td><td><code>&lt;output name="total"&gt;0&lt;/output&gt;</code></td><td>Se usa con formularios y JavaScript.</td></tr>
+      <!-- 73 p --><tr><td>73</td><td><code>&lt;p&gt;</code></td><td>Define un párrafo de texto.</td><td><code>&lt;p&gt;Este es un párrafo.&lt;/p&gt;</code></td><td>Puede contener otros elementos en línea.</td></tr>
+      <!-- 74 picture --><tr><td>74</td><td><code>&lt;picture&gt;</code></td><td>Ofrece varias imágenes según el tamaño de pantalla.</td><td><code>&lt;picture&gt;&lt;source srcset="grande.jpg" media="(min-width:800px)"&gt;&lt;img src="pequena.jpg" alt="Foto"&gt;&lt;/picture&gt;</code></td><td>Siempre termina con una etiqueta img.</td></tr>
+      <!-- 75 pre --><tr><td>75</td><td><code>&lt;pre&gt;</code></td><td>Muestra el texto tal cual, respetando espacios y saltos de línea.</td><td><code>&lt;pre&gt;Linea 1   Linea 2&lt;/pre&gt;</code></td><td>Ideal para mostrar código.</td></tr>
+      <!-- 76 progress --><tr><td>76</td><td><code>&lt;progress&gt;</code></td><td>Muestra una barra de progreso.</td><td><code>&lt;progress value="70" max="100"&gt;70%&lt;/progress&gt;</code></td><td>Sin value es una barra indeterminada.</td></tr>
+      <!-- 77 q --><tr><td>77</td><td><code>&lt;q&gt;</code></td><td>Define una cita corta en línea.</td><td><code>&lt;q&gt;Hola mundo&lt;/q&gt;</code></td><td>El navegador agrega las comillas solo.</td></tr>
+      <!-- 78 rp --><tr><td>78</td><td><code>&lt;rp&gt;</code></td><td>Muestra paréntesis para navegadores sin soporte ruby.</td><td><code>&lt;rp&gt;(&lt;/rp&gt;</code></td><td>Se usa dentro de ruby.</td></tr>
+      <!-- 79 rt --><tr><td>79</td><td><code>&lt;rt&gt;</code></td><td>Define la pronunciación de caracteres (ruby).</td><td><code>&lt;rt&gt;kan&lt;/rt&gt;</code></td><td>Se usa en textos de Asia oriental.</td></tr>
+      <!-- 80 ruby --><tr><td>80</td><td><code>&lt;ruby&gt;</code></td><td>Define una anotación de pronunciación sobre caracteres.</td><td><code>&lt;ruby&gt;漢&lt;rt&gt;kan&lt;/rt&gt;&lt;/ruby&gt;</code></td><td>Se combina con rt y rp.</td></tr>
+      <!-- 81 s --><tr><td>81</td><td><code>&lt;s&gt;</code></td><td>Muestra texto tachado que ya no es correcto.</td><td><code>&lt;s&gt;Precio anterior&lt;/s&gt;</code></td><td>Para texto eliminado de verdad se usa del.</td></tr>
+      <!-- 82 samp --><tr><td>82</td><td><code>&lt;samp&gt;</code></td><td>Muestra la salida de un programa de computadora.</td><td><code>&lt;samp&gt;Error 404&lt;/samp&gt;</code></td><td>Usa fuente monoespaciada.</td></tr>
+      <!-- 83 script --><tr><td>83</td><td><code>&lt;script&gt;</code></td><td>Incluye o enlaza código JavaScript.</td><td><code>&lt;script src="app.js"&gt;&lt;/script&gt;</code></td><td>Suele ponerse al final del body.</td></tr>
+      <!-- 84 search --><tr><td>84</td><td><code>&lt;search&gt;</code></td><td>Define una sección de búsqueda.</td><td><code>&lt;search&gt;&lt;form&gt;...&lt;/form&gt;&lt;/search&gt;</code></td><td>Es una etiqueta nueva de HTML5.</td></tr>
+      <!-- 85 section --><tr><td>85</td><td><code>&lt;section&gt;</code></td><td>Define una sección temática de la página.</td><td><code>&lt;section&gt;&lt;h2&gt;Servicios&lt;/h2&gt;&lt;/section&gt;</code></td><td>Normalmente lleva un encabezado.</td></tr>
+      <!-- 86 select --><tr><td>86</td><td><code>&lt;select&gt;</code></td><td>Crea una lista desplegable.</td><td><code>&lt;select&gt;&lt;option&gt;Uno&lt;/option&gt;&lt;/select&gt;</code></td><td>El atributo multiple permite elegir varias opciones.</td></tr>
+      <!-- 87 slot --><tr><td>87</td><td><code>&lt;slot&gt;</code></td><td>Define un espacio dentro de un Web Component.</td><td><code>&lt;slot name="titulo"&gt;&lt;/slot&gt;</code></td><td>Se usa en componentes avanzados.</td></tr>
+      <!-- 88 small --><tr><td>88</td><td><code>&lt;small&gt;</code></td><td>Muestra texto en letra más pequeña (notas legales).</td><td><code>&lt;small&gt;Términos y condiciones&lt;/small&gt;</code></td><td>Ideal para letra pequeña.</td></tr>
+      <!-- 89 source --><tr><td>89</td><td><code>&lt;source&gt;</code></td><td>Define varios archivos de medios para audio, video o picture.</td><td><code>&lt;source src="video.mp4" type="video/mp4"&gt;</code></td><td>No tiene etiqueta de cierre.</td></tr>
+      <!-- 90 span --><tr><td>90</td><td><code>&lt;span&gt;</code></td><td>Define un contenedor en línea para dar estilo a parte de un texto.</td><td><code>Mi color es &lt;span style="color:red"&gt;rojo&lt;/span&gt;</code></td><td>Es como div pero no rompe la línea.</td></tr>
+      <!-- 91 strong --><tr><td>91</td><td><code>&lt;strong&gt;</code></td><td>Da importancia fuerte al texto (se ve en negrita).</td><td><code>&lt;strong&gt;Importante&lt;/strong&gt;</code></td><td>Los lectores de pantalla lo enfatizan.</td></tr>
+      <!-- 92 style --><tr><td>92</td><td><code>&lt;style&gt;</code></td><td>Incluye código CSS dentro del documento.</td><td><code>&lt;style&gt;p { color: blue; }&lt;/style&gt;</code></td><td>Normalmente va en head.</td></tr>
+      <!-- 93 sub --><tr><td>93</td><td><code>&lt;sub&gt;</code></td><td>Muestra texto como subíndice.</td><td><code>H&lt;sub&gt;2&lt;/sub&gt;O</code></td><td>Útil en fórmulas químicas.</td></tr>
+      <!-- 94 summary --><tr><td>94</td><td><code>&lt;summary&gt;</code></td><td>Define el título visible de un bloque details.</td><td><code>&lt;summary&gt;Ver más&lt;/summary&gt;</code></td><td>Va dentro de details.</td></tr>
+      <!-- 95 sup --><tr><td>95</td><td><code>&lt;sup&gt;</code></td><td>Muestra texto como superíndice.</td><td><code>x&lt;sup&gt;2&lt;/sup&gt;</code></td><td>Útil en potencias.</td></tr>
+      <!-- 96 table --><tr><td>96</td><td><code>&lt;table&gt;</code></td><td>Crea una tabla de datos.</td><td><code>&lt;table border="1"&gt;&lt;tr&gt;&lt;td&gt;Dato&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></td><td>Se combina con tr, th y td.</td></tr>
+      <!-- 97 tbody --><tr><td>97</td><td><code>&lt;tbody&gt;</code></td><td>Agrupa las filas del cuerpo de una tabla.</td><td><code>&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Dato&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;</code></td><td>Va después de thead.</td></tr>
+      <!-- 98 td --><tr><td>98</td><td><code>&lt;td&gt;</code></td><td>Define una celda de datos en una tabla.</td><td><code>&lt;td&gt;Dato&lt;/td&gt;</code></td><td>Puede unir columnas con colspan.</td></tr>
+      <!-- 99 template --><tr><td>99</td><td><code>&lt;template&gt;</code></td><td>Guarda HTML que no se muestra hasta que JavaScript lo use.</td><td><code>&lt;template&gt;&lt;p&gt;Oculto&lt;/p&gt;&lt;/template&gt;</code></td><td>Su contenido no se ve en pantalla.</td></tr>
+      <!-- 100 textarea --><tr><td>100</td><td><code>&lt;textarea&gt;</code></td><td>Crea un cuadro de texto de varias líneas.</td><td><code>&lt;textarea rows="4" cols="30"&gt;&lt;/textarea&gt;</code></td><td>rows y cols controlan el tamaño.</td></tr>
+      <!-- 101 tfoot --><tr><td>101</td><td><code>&lt;tfoot&gt;</code></td><td>Agrupa las filas del pie de una tabla.</td><td><code>&lt;tfoot&gt;&lt;tr&gt;&lt;td&gt;Total&lt;/td&gt;&lt;/tr&gt;&lt;/tfoot&gt;</code></td><td>Suele usarse para totales.</td></tr>
+      <!-- 102 th --><tr><td>102</td><td><code>&lt;th&gt;</code></td><td>Define una celda de encabezado en una tabla.</td><td><code>&lt;th&gt;Nombre&lt;/th&gt;</code></td><td>Se ve en negrita y centrada por defecto.</td></tr>
+    </tbody>
+  </table>
+  <!-- Fin de la tabla -->
+
+</body>
+</html>
